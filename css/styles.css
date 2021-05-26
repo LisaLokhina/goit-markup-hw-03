@@ -28,9 +28,22 @@ body {
 .logo-highlight {
   color: var(--brand-color);
 }
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+
 /* Header styles */
 .anchor {
   color: var(--main-color);
