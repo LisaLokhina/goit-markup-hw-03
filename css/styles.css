@@ -4,6 +4,7 @@
   --header-color: #212121;
   --white: #ffffff;
   --black: #000000;
+  --background-dark: #2f303a;
 }
 
 body {
@@ -32,14 +33,13 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
   padding-left: 0;
 }
 
@@ -55,8 +55,33 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.visually-hidden {
+  display: none;
+}
+.site-nav,
+.auth-nav,
+.filter-button,
+.project-thumbnails {
+  display: inline-block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+}
 
 /* Header styles */
+.container.header {
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
 .anchor {
   color: var(--main-color);
   text-decoration: none;
@@ -65,8 +90,35 @@ img {
 .anchor:focus {
   color: var(--brand-color);
 }
-
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.site-nav .menu-item,
+.auth-nav .menu-item {
+  display: inline-block;
+}
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav .menu-item {
+  margin-right: 50px;
+}
+.auth-nav .menu-item {
+  margin-left: 50px;
+}
 /* Main styles */
+
+/* Hero styles */
+.hero {
+  background-color: var(--background-dark);
+}
+.hero .full-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
 .main-header {
   color: var(--white);
   font-weight: 900;
@@ -75,8 +127,13 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
 }
-
+.modal-btn {
+  margin-top: 30px;
+  padding: 10px 32px;
+  border-radius: 4px;
+}
 .secondary-header {
   color: var(--header-color);
   font-weight: bold;
@@ -85,6 +142,14 @@ img {
   text-align: center;
 }
 
+.project-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  margin: 30px;
+}
 .caption {
   color: var(--header-color);
   font-size: 14px;
@@ -130,10 +195,12 @@ img {
   background-color: var(--brand-color);
   color: var(--white);
 }
-
+.list-item {
+  display: inline-block;
+}
 /* Footer styles */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-dark);
 }
 .contacts {
   font-style: normal;
