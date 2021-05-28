@@ -249,6 +249,20 @@ img {
   display: inline-block;
 }
 /* Footer styles */
+.footer .container {
+  flex-direction: column;
+  padding: 60px 0;
+}
+.logo-footer {
+  padding-bottom: 20px;
+}
+.footer .list-item {
+  display: block;
+}
+
+.footer .list-item:not(:last-child) {
+  padding-bottom: 9px;
+}
 .footer {
   background-color: var(--background-dark);
 }
