@@ -108,7 +108,8 @@ img {
   text-decoration: none;
 }
 .anchor:hover,
-.anchor:focus {
+.anchor:focus,
+.anchor.active {
   color: var(--brand-color);
 }
 .page-header {
@@ -215,7 +216,22 @@ img {
 }
 
 /* Portfolio styles */
-
+.section .container {
+  flex-direction: column;
+  align-items: center;
+}
+.project-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.project-caption {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
 .project-name {
   font-size: 18px;
   line-height: 2;
@@ -225,8 +241,15 @@ img {
   text-decoration: none;
   color: var(--main-color);
 }
-.project-item {
-  margin: 30px;
+.project-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.project-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.filters.list {
+  font-size: 0;
 }
 
 .filter-button {
@@ -238,20 +261,25 @@ img {
   color: var(--header-color);
   border: none;
   cursor: pointer;
+  padding: 6px 22px;
+  margin-right: 8px;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
-.filter-button:focus {
+.filter-button:focus,
+.filter-button.active {
   background-color: var(--brand-color);
   color: var(--white);
 }
 .list-item {
   display: inline-block;
 }
+
 /* Footer styles */
 .footer .container {
   flex-direction: column;
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .logo-footer {
   padding-bottom: 20px;
