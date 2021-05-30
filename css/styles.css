@@ -124,9 +124,13 @@ img {
 }
 .site-nav .menu-item {
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 .auth-nav .menu-item {
   margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 /* Main styles */
 
