@@ -23,6 +23,7 @@ body {
   font-size: 26px;
   color: var(--black);
   text-decoration: none;
+  line-height: 1.17;
 }
 .logo-footer {
   color: var(--white);
@@ -114,6 +115,7 @@ img {
 }
 .page-header {
   border-bottom: 1px solid #ececec;
+  padding: 24px 0 25px;
 }
 .site-nav .menu-item,
 .auth-nav .menu-item {
@@ -124,13 +126,9 @@ img {
 }
 .site-nav .menu-item {
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 31px;
 }
 .auth-nav .menu-item {
   margin-left: 50px;
-  padding-top: 32px;
-  padding-bottom: 31px;
 }
 /* Main styles */
 
