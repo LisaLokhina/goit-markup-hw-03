@@ -1,5 +1,6 @@
 :root {
   --brand-color: #2196f3;
+  --brand-color-hover: #188ce8;
   --main-color: #757575;
   --header-color: #212121;
   --white: #ffffff;
@@ -85,6 +86,10 @@ img {
   color: var(--white);
   border: none;
   cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--brand-color-hover);
 }
 .secondary-header {
   color: var(--header-color);
@@ -267,9 +272,12 @@ img {
   margin-right: 8px;
   border-radius: 4px;
 }
-
 .filter-button:hover,
-.filter-button:focus,
+.filter-button:focus {
+  background-color: var(--brand-color-hover);
+  color: var(--white);
+}
+
 .filter-button.active {
   background-color: var(--brand-color);
   color: var(--white);
