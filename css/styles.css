@@ -125,6 +125,7 @@ img {
 .site-nav .menu-item,
 .auth-nav .menu-item {
   display: inline-block;
+  font-weight: 500;
 }
 .site-nav {
   margin-left: 93px;
@@ -141,6 +142,10 @@ img {
 .hero {
   background-color: var(--background-dark);
 }
+.section.hero {
+  padding: 0;
+}
+
 .hero .full-width {
   display: flex;
   flex-direction: column;
@@ -175,6 +180,9 @@ img {
 }
 .our-benefits .list-item:not(:last-child) {
   margin-right: 30px;
+}
+.our-benefits .caption {
+  text-transform: uppercase;
 }
 .our-benefits.section {
   padding-bottom: 0;
